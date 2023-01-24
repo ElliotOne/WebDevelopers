@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>پنل کاربری - پروفایل</title>
+    <!-------------------------------Favicon-------------------------------------->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+
+    <!-------------------------------FontAwsome-------------------------------------->
+    <link rel="stylesheet" href="assets/css/lib/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <script src="assets/js/lib/jquery-3.3.1.min.js"></script>
+
+    <!-------------------------------Bootstarp-------------------------------------->
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">لوگوی سایت</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">داشبورد</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project_new.html">پروژه جدید</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project_all.html">لیست پروژه ها</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span id="lblUserName">نام کاربر لاگین شده در این قسمت</span>
+                        <span class="fa fa-user-alt"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="support_new.html">ارسال تیکت</a>
+                        <a class="dropdown-item" href="support_all.html">پیگیری سفارشات</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="profile.html">ویرایش پروفایل</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" id="frmSearch">
+                <input class="form-control mr-sm-2" type="search" placeholder="عبارتی برای جست و جو وارد کنید ..."
+                    aria-label="Search" id="inpsearch">
+                <button type="submit" class="btnRed my-2 my-sm-0" type="submit">
+                    <span><span class="fa fa-search"></span></span>
+                </button>
+            </form>
+        </div>
+    </nav>
+    <section id="main">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="panelCard">
+                        <div class="panelCardHeader">
+                            <p class="h5">ویرایش پروفایل کاربری</p>
+                        </div>
+                        <div class="panelCardContent">
+                            <div class="panelCardMain">
+                                <form action="" id="frmProfileEdit">
+                                    <div class="form-group">
+                                        <label for="inpfirstname">نام</label>
+                                        <input type="text" id="inpfirstname" class="form-control py-2 rounded-0">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inplastname">نام خانوادگی</label>
+                                        <input type="text" id="inplastname" class="form-control py-2 rounded-0">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inpemail">ایمیل</label>
+                                        <input type="text" id="inpemail" class="form-control py-2 rounded-0">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inpphonenumber">شماره تلفن</label>
+                                        <input type="text" id="inpphonenumber" class="form-control py-2 rounded-0">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inpusername">نام کاربری</label>
+                                        <input type="text" id="inpusername" class="form-control py-2 rounded-0">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inppassword">رمز عبور</label>
+                                        <input type="text" id="inppassword" class="form-control py-2 rounded-0">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inppasswordConfirm">تکرار رمز عبور</label>
+                                        <input type="text" id="inppasswordConfirm" class="form-control py-2 rounded-0">
+                                    </div>
+                                    <div class="form-group" id="frmProfileSection">
+                                        <div class="row justify-content-center">
+                                            <div class="col-6">
+                                                <img src="assets/images/breadcrumb_background.jpg" alt=""
+                                                    class="d-block">
+                                                <input type="file" id="hiddenImgUploader">
+                                                <button id="btnImgUploader" class="btnRed mt-2 px-5" type="button">
+                                                    <span class="fa fa-upload mr-3"></span>
+                                                    <span>آپلود تصویر پروفایل</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" name="" id="hiddenSubmit">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="panelCardFooter row">
+                                <div class="col-6 text-left">
+                                    <button type="button" class="btnPurple px-3" id="btnSubmit">
+                                        ویرایش
+                                    </button>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <a href="#" class="text-danger" data-toggle="modal"
+                                        data-target="#deleteAccountModal">
+                                        حذف حساب کاربری
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="deleteAccountModal" tabindex="-1" role="dialog"
+        aria-labelledby="deleteAccountModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-danger" id="deleteAccountModalLabel">هشدار</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" id="frmDeleteAccount">
+                        <p>
+                            شما در آستانه حذف حساب کاربری خود هستید ، برای این کار عبارت
+                            "حساب کاربری من را پاک کن"
+                            را به صورت دقیق وارد و سپس بر روی دکمه ی
+                            حذف کلیک کنید.
+                        </p>
+                        <input class="form-control" type="text" id="inpDeleteConfirm">
+                        <button type="submit" class="btn btn-danger btn-block mt-5">حذف</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/profile.js"></script>
+</body>
+
+</html>

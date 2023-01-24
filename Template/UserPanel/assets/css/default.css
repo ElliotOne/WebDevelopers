@@ -1,0 +1,454 @@
+/*------------------------Basic Start------------------------*/
+:root {
+    --light: #ececda;
+    --dark: #323232;
+    --pink: #E91E63;
+    --red: #F50057;
+    --yellow: #ffe600;
+    --blue: #0051ff;
+    --purple: #7009b4;
+}
+
+*:focus {
+    box-shadow: 0 0 10px 1px rgba(162, 0, 255, 0.3) !important;
+    border-color: transparent !important;
+}
+
+textarea {
+    resize: none;
+}
+
+@font-face {
+    font-family: "BNazanin";
+    src: url("font/BNazanin.eot") format(eot),
+        url("font/BNazanin.ttf") format(ttf),
+        url("font/BNazanin.woff") format(woff);
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: BNazanin !important;
+    text-align: right !important;
+    background:
+        -webkit-linear-gradient(315deg, hsla(343.79, 92.01%, 43.78%, 1) 0%, hsla(343.79, 92.01%, 43.78%, 0) 70%),
+        -webkit-linear-gradient(65deg, hsla(192.26, 90.55%, 44.88%, 1) 10%, hsla(192.26, 90.55%, 44.88%, 0) 80%),
+        -webkit-linear-gradient(135deg, hsla(312.99, 94.1%, 48.3%, 1) 15%, hsla(312.99, 94.1%, 48.3%, 0) 80%),
+        -webkit-linear-gradient(205deg, hsla(239.87, 91.43%, 46.58%, 1) 100%, hsla(239.87, 91.43%, 46.58%, 0) 70%);
+    background:
+        linear-gradient(135deg, hsla(343.79, 92.01%, 43.78%, 1) 0%, hsla(343.79, 92.01%, 43.78%, 0) 70%),
+        linear-gradient(25deg, hsla(192.26, 90.55%, 44.88%, 1) 10%, hsla(192.26, 90.55%, 44.88%, 0) 80%),
+        linear-gradient(315deg, hsla(312.99, 94.1%, 48.3%, 1) 15%, hsla(312.99, 94.1%, 48.3%, 0) 80%),
+        linear-gradient(245deg, hsla(239.87, 91.43%, 46.58%, 1) 100%, hsla(239.87, 91.43%, 46.58%, 0) 70%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+
+
+*:focus {
+    box-shadow: 0 0 10px 1px rgba(162, 0, 255, 0.3) !important;
+    border-color: transparent !important;
+}
+
+
+.btnRed {
+    background-color: var(--red);
+    padding: 5px;
+    text-align: center;
+    border: 2px solid var(--red);
+    transition: all 0.3s ease-in-out;
+    color: white;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+.btnRed:hover {
+    box-shadow: 0 10px 10px 3px var(--red);
+    border-radius: 25px;
+}
+
+.btnPurple {
+    background-color: var(--purple);
+    padding: 5px;
+    text-align: center;
+    border: 2px solid var(--purple);
+    transition: all 0.3s ease-in-out;
+    color: white;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+.btnPurple:hover {
+    box-shadow: 0 10px 10px 3px var(--purple);
+    border-radius: 25px;
+}
+
+/*------------------------Basic End------------------------*/
+
+.panelCard {
+    background-color: rgb(245, 245, 245);
+    color: var(--dark);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+}
+
+.panelCardHeader {
+    font-size: 20px;
+    padding: 10px;
+    overflow: hidden;
+    border-bottom: 2px solid var(--light);
+    background-color: var(--purple);
+    color: var(--light);
+}
+
+.panelCardContentHide {
+    overflow: hidden;
+    height: 0 !important;
+}
+
+.panelCardContent {
+    width: 100%;
+    display: block;
+}
+
+.panelCardMain {
+    padding: 20px 30px;
+    width: 100%;
+    display: block;
+}
+
+.panelCardFooter {
+    padding: 15px 30px;
+}
+
+#main {
+    margin: 0 auto;
+    padding: 100px 0;
+    width: 90vw;
+}
+
+.mainLg {
+    width: 100% !important;
+}
+
+#topNavbar {
+    background-color: var(--purple) !important;
+}
+
+#topNavbar ul {
+    width: 100%;
+}
+
+#topNavbar ul li:nth-child(1) {
+    width: 10%;
+}
+
+#topNavbar ul li:nth-child(2) {
+    width: 60%;
+}
+
+#topNavbar ul li:nth-child(3) {
+    width: 30%;
+    text-align: center;
+}
+
+#btnSidebarToggler {
+    width: 50%;
+}
+
+#btnSidebarToggler span {
+    transition: all 0.2s ease-in-out;
+}
+
+#btnSidebarToggler:hover span {
+    transform: scale(1.2);
+}
+
+/*=========================== 
+        Validation
+===========================*/
+.invalidInp {
+    box-shadow: 0 0 2px 1px var(--primary);
+}
+
+
+
+
+
+/*=========================== 
+        Profile Page Start
+===========================*/
+#frmProfileSection img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+#frmProfileSection {
+    text-align: center;
+}
+
+#hiddenImgUploader,
+#hiddenSubmit {
+    display: none;
+}
+
+/*=========================== 
+        Profile Page End
+===========================*/
+/*=========================== 
+    Project_All Page Start
+===========================*/
+.lblStatusDone {
+    font-weight: 700;
+    color: var(--green);
+}
+
+.lblStatusUnderDevelopment {
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.lblStatusRejected {
+    font-weight: 700;
+    color: var(--red);
+}
+
+#tblAllProjects th:nth-child(1) {
+    width: 5%;
+}
+
+#tblAllProjects th:nth-child(2) {
+    width: 40%;
+}
+
+#tblAllProjects th:nth-child(3) {
+    width: 50%;
+}
+
+#tblAllProjects th:nth-child(4) {
+    width: 5%;
+}
+
+/*=========================== 
+    Project_All Page End
+===========================*/
+
+/*=========================== 
+    Project_New Page Start
+===========================*/
+#hiddenFileUploader {
+    display: none;
+}
+
+#submitAlert {
+    background-color: var(--green);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    display: none;
+}
+
+#submitAlert button {
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+#submitAlert button:hover {
+    color: var(--red) !important;
+}
+
+#submitAlert p {
+    display: inline-block;
+}
+
+.showAlert {
+    display: block !important;
+}
+
+/*=========================== 
+    Project_New Page End
+===========================*/
+
+
+/*=========================== 
+Project_Single Page Start
+===========================*/
+#hiddenFileUploader,
+#hiddenFileDownloader {
+    display: none;
+}
+
+#projectStatus {
+    background-color: var(--dark);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+#projectStatus span:nth-child(1) {
+    font-weight: 600;
+}
+
+#projectStatus span:nth-child(2) {
+    margin-right: 10px;
+}
+
+
+.lblStatusDone {
+    font-weight: 700;
+    color: var(--green);
+}
+
+.lblStatusUnderDevelopment {
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.lblStatusRejected {
+    font-weight: 700;
+    color: var(--red);
+}
+
+/*=========================== 
+Project_Single Page End
+===========================*/
+
+
+/*=========================== 
+Support_All Page Start
+===========================*/
+.lblStatusOpen {
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.lblStatusClosed {
+    font-weight: 700;
+    color: var(--green);
+}
+
+
+#tblAllTickets th:nth-child(1) {
+    width: 5%;
+}
+
+#tblAllTickets th:nth-child(2) {
+    width: 30%;
+}
+
+#tblAllTickets th:nth-child(3) {
+    width: 25%;
+}
+
+#tblAllTickets th:nth-child(4) {
+    width: 35%;
+}
+
+#tblAllTickets th:nth-child(5) {
+    width: 5%;
+}
+
+/*=========================== 
+Support_All Page End
+===========================*/
+
+
+/*=========================== 
+Support_Single Page Start
+===========================*/
+.CommentCard {
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.CommentCardRight {
+    display: inline-block;
+    width: 20%;
+    float: right;
+}
+
+.CommentCardRight img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-top: 25%;
+}
+
+.CommentCardLeft {
+    display: inline-block;
+    width: 80%;
+    float: left;
+    padding: 10px;
+}
+
+.CommentCardLeft ul {
+    list-style: none;
+    color: var(--gray);
+}
+
+.CommentCardLeft ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.CommentCardLeft p {
+    margin-top: 20px;
+}
+
+.btnAnswer {
+    float: left;
+    padding: 10px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid var(--purple);
+    color: var(--purple);
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btnAnswer:hover {
+    background-color: var(--purple);
+    color: white;
+    border-color: var(--purple);
+}
+
+.Comments ul {
+    list-style: none;
+}
+
+.UserComment {
+    background-color: rgb(250, 250, 250);
+}
+
+.AdminComment {
+    background-color: rgb(240, 240, 230);
+}
+
+/*================== Comments  End ====================*/
+/*=========================== 
+Support_Single Page End
+===========================*/
+
+/*=========================== 
+Support_New Page Start
+===========================*/
+#divOtherTicketTitle {
+    display: none;
+}
+
+/*=========================== 
+Support_New Page End
+===========================*/

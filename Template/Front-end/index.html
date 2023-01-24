@@ -1,0 +1,863 @@
+﻿<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="طراحی پروژه های خود شامل وبسایت و برنامه های اندرویدی و ویندوزی خود را به ما بسپارید - گروه وب دولوپرز"/>
+    <meta property="og:locale" content="fa_IR">
+    <meta property="og:type" content="intro">
+    <meta property="og:title" content="گروه برنامه نویسی وب دولوپرز">
+    <meta property="og:description" content="طراحی پروژه های خود شامل وبسایت و برنامه های اندرویدی و ویندوزی خود را به ما بسپارید - گروه وب دولوپرز"/>
+    <meta property="og:url" content="#">
+    <meta property="og:site_name" content="وب دولوپرز">
+    <meta property="og:image" content="#">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="طراحی پروژه های خود شامل وبسایت و برنامه های اندرویدی و ویندوزی خود را به ما بسپارید - گروه وب دولوپرز"/>
+    <meta name="twitter:title" content="گروه برنامه نویسی وب دولوپرز">
+    <meta name="twitter:image" content="#">
+
+    <title>توسعه دهندگان وب</title>
+    <!-------------------------------Favicon-------------------------------------->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+
+    <!-------------------------------FontAwsome-------------------------------------->
+    <link rel="stylesheet" href="assets/css/lib/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <!-------------------------------Slick Slider-------------------------------------->
+    <link rel="stylesheet" href="assets/css/lib/slick.css">
+    <link rel="stylesheet" href="assets/css/lib/slick-theme.css">
+
+    <script src="assets/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/lib/typed.min.js"></script>
+
+    <!-------------------------------Bootstarp-------------------------------------->
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+
+    <script src="assets/js/lib/smoothScroll.js"></script>
+
+  </head>
+
+  <body>
+    <div id="outterBar">
+      <div id="innerBar"></div>
+    </div>
+    <!---------------------Top - Header Start---------------------->
+    <div id="Up"></div>
+    <!---------------------NavigationBar Start---------------------->
+    <section id="top">
+      <div id="navigation" class="navigationBefore">
+        <ul id="navLinks">
+          <li>
+            <a href="index.html" class="navlink">صفحه اصلی</a>
+          </li>
+          <li>
+            <a href="sign-in.html" class="navlink">ورود</a>
+          </li>
+          <li>
+            <a href="project.html" class="navlink">سفارش پروژه</a>
+          </li>
+          <li class="drop">
+            <a href="#">
+              سایر امکانات</a>
+            <div class="dropContent">
+              <a href="blog.html" class="droplink">بلاگ</a>
+              <a href="blog-single.html" class="droplink">پست</a>
+              <a href="notfound.html" class="droplink">خطای 404</a>
+            </div>
+          </li>
+          <li>
+            <a href="about.html" class="navlink">درباره ما</a>
+          </li>
+        </ul>
+        <a href="#" id="navLogo"><img src="assets/images/index/nav_logo.jpg" alt=""></a>
+      </div>
+
+      <!--============== Side Menu (Tablet And Mobile) Start==============-->
+      <div id="smallNav">
+        <button id="sideToggler">
+          <span class="fa fa-list"></span>
+        </button>
+      </div>
+      <div id="side">
+        <span id="sideClose" class="fa fa-times"></span>
+        <ul id="sideContent"></ul>
+      </div>
+      <!--============== Side Menu (Tablet And Mobile) End==============-->
+    </section>
+    <!---------------------NavigationBar End---------------------->
+
+    <!---------------------Slider Start---------------------->
+    <section id="Slider">
+      <div id="topSlider">
+        <div>
+          <img src="assets/images/index/slideshow/1.jpg" alt="">
+        </div>
+        <div>
+          <img src="assets/images/index/slideshow/2.jpg" alt="">
+        </div>
+        <div>
+          <img src="assets/images/index/slideshow/3.jpg" alt="">
+        </div>
+        <div>
+          <img src="assets/images/index/slideshow/4.jpg" alt="">
+        </div>
+        <div>
+          <img src="assets/images/index/slideshow/5.jpg" alt="">
+        </div>
+      </div>
+
+      <div id="sliderOverlay">
+        <div class="fa-2x text-white text-center">
+          <span class="fab fa-windows"></span>
+          <span class="fab fa-android"></span>
+          <span class="fab fa-apple"></span>
+        </div>
+        <div class="text-center mt-2 mb-5">
+          <div class="animatedText"></div>
+        </div>
+      </div>
+    </section>
+    <!---------------------Slider End---------------------->
+    <!---------------------Top - Header End---------------------->
+
+    <!--------------------------Intro Start-------------------------->
+    <section id="Intro">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12" id="IntroCardContainer1">
+            <div class="IntroCard">
+              <span class="fa fa-desktop"></span>
+              <p>
+                کد نویسی و تولید انواع پروژه های دسکتاپ
+                <br>
+                جاوا / سی شارپ / سی پلاس پلاس
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12" id="IntroCardContainer2">
+            <div class="IntroCard">
+              <span class="fab fa-chrome"></span>
+              <p>
+                طراحی انواع وبسایت واکنش گرا
+                <br>
+                پی اچ پی / وردپرس
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 col-12" id="IntroCardContainer3">
+            <div class="IntroCard">
+              <span class="fa fa-mobile-alt"></span>
+              <p>
+                طراحی اپلیکیشن اندروید و آی او اس
+                <br>
+                جاوا اسکریپت
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--------------------------Intro Start-------------------------->
+
+    <!--------------------------OverView Start-------------------------->
+    <section id="OverView">
+      <div class="parallax1"></div>
+      <div class="parallaxContent">
+        <div class="container-fluid py-5">
+          <div class="row">
+            <div class="col-lg-5 col-md-6 col-sm-12 col-12" id="OverViewList">
+              <p class="h3 ml-5">همین حالا پروژه خود را سفارش دهید !</p>
+              <ul class=" mt-5">
+                <li>
+                  <span class="fa fa-check"></span>
+                  <span>انجام انواع پروژه های وب و اپلیکیشن</span>
+                </li>
+                <li>
+                  <span class="fa fa-check"></span>
+                  <span>پشتیبانی رایگان به مدت 2 ماه</span>
+                </li>
+                <li>
+                  <span class="fa fa-check"></span>
+                  <span>انجام پروژه ها در کمترین زمان ممکن و بالاترین کیفیت</span>
+                </li>
+                <li>
+                  <span class="fa fa-check"></span>
+                  <span>تطابق کامل پروژه با خواسته های شما</span></li>
+                <li>
+                  <span class="fa fa-check"></span>
+                  <span>تخفیفات ویژه مشتریان</span>
+                </li>
+              </ul>
+              <a href="#" class="myBtn mt-5">سفارش پروژه جدید</a>
+            </div>
+            <div class="col-lg-7 col-md-6 col-sm-12 col-12 mt-lg-0 mt-md-5 mt-sm-5 mt-5">
+              <div id="overviewSlider">
+                <div>
+                  <img src="assets/images/index/slideshow/3.jpg" alt="">
+                </div>
+                <div>
+                  <img src="assets/images/index/slideshow/3.jpg" alt="">
+                </div>
+                <div>
+                  <img src="assets/images/index/slideshow/3.jpg" alt="">
+                </div>
+                <div>
+                  <img src="assets/images/index/slideshow/3.jpg" alt="">
+                </div>
+                <div>
+                  <img src="assets/images/index/slideshow/3.jpg" alt="">
+                </div>
+                <div>
+                  <img src="assets/images/index/slideshow/3.jpg" alt="">
+                </div>
+                <div>
+                  <img src="assets/images/index/slideshow/3.jpg" alt="">
+                </div>
+                <div>
+                  <img src="assets/images/index/slideshow/3.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax2"></div>
+    </section>
+    <!--------------------------OverView End-------------------------->
+    <!--------------------------Comments Start-------------------------->
+    <section id="Comments">
+      <p class="h2 text-center py-5">نظرات کاربران</p>
+      <div id="commentsSlider">
+        <div>
+          <div class="CommentsCard">
+            <div class="CommentsCardHeader">
+              <img src="assets/images/index/slideshow/1.jpg" alt="">
+            </div>
+            <div class="CommentsCardBody">
+              <p class="CommentsCardTitle">علی مومن زاده</p>
+              <p class="CommentsCardContent">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="CommentsCard">
+            <div class="CommentsCardHeader">
+              <img src="assets/images/index/slideshow/1.jpg" alt="">
+            </div>
+            <div class="CommentsCardBody">
+              <p class="CommentsCardTitle">علی مومن زاده</p>
+              <p class="CommentsCardContent">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="CommentsCard">
+            <div class="CommentsCardHeader">
+              <img src="assets/images/index/slideshow/1.jpg" alt="">
+            </div>
+            <div class="CommentsCardBody">
+              <p class="CommentsCardTitle">علی مومن زاده</p>
+              <p class="CommentsCardContent">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="CommentsCard">
+            <div class="CommentsCardHeader">
+              <img src="assets/images/index/slideshow/1.jpg" alt="">
+            </div>
+            <div class="CommentsCardBody">
+              <p class="CommentsCardTitle">علی مومن زاده</p>
+              <p class="CommentsCardContent">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="CommentsCard">
+            <div class="CommentsCardHeader">
+              <img src="assets/images/index/slideshow/1.jpg" alt="">
+            </div>
+            <div class="CommentsCardBody">
+              <p class="CommentsCardTitle">علی مومن زاده</p>
+              <p class="CommentsCardContent">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="CommentsCard">
+            <div class="CommentsCardHeader">
+              <img src="assets/images/index/slideshow/1.jpg" alt="">
+            </div>
+            <div class="CommentsCardBody">
+              <p class="CommentsCardTitle">علی مومن زاده</p>
+              <p class="CommentsCardContent">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="CommentsCard">
+            <div class="CommentsCardHeader">
+              <img src="assets/images/index/slideshow/1.jpg" alt="">
+            </div>
+            <div class="CommentsCardBody">
+              <p class="CommentsCardTitle">علی مومن زاده</p>
+              <p class="CommentsCardContent">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------------------Comments End-------------------------->
+
+    <!--------------------------Services Start-------------------------->
+    <section id="Services">
+      <p class="text-center text-white h2 py-5">خدمات</p>
+      <div class="container-fluid">
+        <div class="row mt-5">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="ServicesCard" data-aos="flip-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="500">
+              <span class="fab fa-chrome"></span>
+              <h3>وبسایت</h3>
+              <p>
+                طراحی انواع وبسایت های ریسپانسیو
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="ServicesCard" data-aos="flip-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="500">
+              <span class="fa fa-mobile"></span>
+              <h3>وب اپلیکیشین</h3>
+              <p>
+                ساخت و طراحی وب اپلیکیشن برای سیتم عامل های اندروید و آی او اس
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="ServicesCard" data-aos="flip-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="500">
+              <span class="fab fa-android"></span>
+              <h3>نرم افزار اندروید</h3>
+              <p>
+                طراحی نرم افزار های اندروید سفارشی با بهترین کیفیت
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="ServicesCard" data-aos="flip-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="500">
+              <span class="fa fa-file-invoice-dollar"></span>
+              <h3>هزینه</h3>
+              <p>
+                با کمترین هزینه پروژه های خود را به ما بسپارید!
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="ServicesCard" data-aos="flip-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="500">
+              <span class="fa fa-ticket-alt"></span>
+              <h3>تخفیف</h3>
+              <p>
+                تخفیفات ویژه برای شما مشتریان گرامی
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="ServicesCard" data-aos="flip-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="500">
+              <span class="fa fa-user-friends"></span>
+              <h3>پشتیبانی</h3>
+              <p>
+                پشتیبانی کامل محصولات و رفع خطاهای احتمالی
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------Services End-------------------------->
+
+    <!--------------------------Blog Start-------------------------->
+    <section id="Blog">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-lg-0 mt-md-2 mt-sm-2 mt-2">
+            <div class="BlogCard">
+              <div class="BlogCardHeader">
+                <img src="assets/images/index/team/2.jpg" alt="">
+                <ul>
+                  <li>
+                    <span class="fa fa-user mr-1"></span><span>علی مومن زاده</span></li>
+                  <li>
+                    <span class="fa fa-clock mr-1"></span>98/1/1<span></span></li>
+                  <li>
+                    <span class="fa fa-comment mr-1"></span>10</li>
+                </ul>
+              </div>
+              <div class="BlogCardBody">
+                <p class="BlogCardTitle">موضوع پست این است</p>
+                <p class="BlogCardContent">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم.
+                </p>
+              </div>
+              <div class="BlogCardFooter">
+                <a href="#">ادامه مطلب ...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-lg-0 mt-md-2 mt-sm-2 mt-2">
+            <div class="BlogCard">
+              <div class="BlogCardHeader">
+                <img src="assets/images/index/team/2.jpg" alt="">
+                <ul>
+                  <li>
+                    <span class="fa fa-user mr-1"></span><span>علی مومن زاده</span></li>
+                  <li>
+                    <span class="fa fa-clock mr-1"></span>98/1/1<span></span></li>
+                  <li>
+                    <span class="fa fa-comment mr-1"></span>10</li>
+                </ul>
+              </div>
+              <div class="BlogCardBody">
+                <p class="BlogCardTitle">موضوع پست این است</p>
+                <p class="BlogCardContent">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم.
+                </p>
+              </div>
+              <div class="BlogCardFooter">
+                <a href="#">ادامه مطلب ...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-lg-0 mt-md-2 mt-sm-2 mt-2">
+            <div class="BlogCard">
+              <div class="BlogCardHeader">
+                <img src="assets/images/index/team/2.jpg" alt="">
+                <ul>
+                  <li>
+                    <span class="fa fa-user mr-1"></span><span>علی مومن زاده</span></li>
+                  <li>
+                    <span class="fa fa-clock mr-1"></span>98/1/1<span></span></li>
+                  <li>
+                    <span class="fa fa-comment mr-1"></span>10</li>
+                </ul>
+              </div>
+              <div class="BlogCardBody">
+                <p class="BlogCardTitle">موضوع پست این است</p>
+                <p class="BlogCardContent">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم.
+                </p>
+              </div>
+              <div class="BlogCardFooter">
+                <a href="#">ادامه مطلب ...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------------------Blog End-------------------------->
+
+    <!--------------------------Counter Start-------------------------->
+    <section id="Counter">
+      <p class="h2 text-center text-white py-5">خلاصه فعالیت ها</p>
+      <div class="container-fluid py-5 text-white">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12 ">
+            <div class="CounterCard">
+              <div class="CounterCardHeader">
+                <span class="fa fa-eye"></span>
+              </div>
+              <div class="CounterCardBody">
+                <p class="CounterCardTitle">
+                  بازدید این هفته
+                </p>
+                <p class="CounterCardContent">
+                  <span id="CounterViews">0</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+            <div class="CounterCardHeader">
+              <span class="fa fa-project-diagram"></span>
+            </div>
+            <div class="CounterCardBody">
+              <p class="CounterCardTitle">
+                پروژه های انجام شده
+              </p>
+              <p class="CounterCardContent">
+                <span id="CounterFinishedProjects">0</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+            <div class="CounterCardHeader">
+              <span class="fa fa-clock"></span>
+            </div>
+            <div class="CounterCardBody">
+              <p class="CounterCardTitle">
+                مدت زمان فعالیت
+              </p>
+              <p class="CounterCardContent">
+                <span id="CounterActiveTime">0</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+            <div class="CounterCardHeader">
+              <span class="fa fa-newspaper"></span>
+            </div>
+            <div class="CounterCardBody">
+              <p class="CounterCardTitle">
+                مطالب
+              </p>
+              <p class="CounterCardContent">
+                <span id="CounterPosts">0</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------------------Counter End-------------------------->
+
+    <!--------------------------Team Start-------------------------->
+    <section id="Team">
+      <p class="h2 text-center py-5">تیم برنامه نویسان</p>
+      <div id="teamSlider">
+        <div>
+          <div class="TeamCard">
+            <div class="TeamCardHeader">
+              <img src="assets/images/index/slideshow/1.jpg" alt="">
+            </div>
+            <div class="TeamCardBody">
+              <p class="TeamCardTitle">علی مومن زاده</p>
+              <p class="TeamCardContent">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم.
+              </p>
+            </div>
+            <div class="TeamCardFooter">
+              <ul>
+                <li>
+                  <a href="#">
+                    <span class="fab fa-telegram"></span></a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="fab fa-instagram"></span></a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="fab fa-linkedin"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="TeamCard">
+            <div class="TeamCardHeader">
+              <img src="assets/images/index/slideshow/1.jpg" alt="">
+            </div>
+            <div class="TeamCardBody">
+              <p class="TeamCardTitle">علی مومن زاده</p>
+              <p class="TeamCardContent">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم.
+              </p>
+            </div>
+            <div class="TeamCardFooter">
+              <ul>
+                <li>
+                  <a href="#">
+                    <span class="fab fa-telegram"></span></a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="fab fa-instagram"></span></a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="fab fa-linkedin"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="TeamCard">
+            <div class="TeamCardHeader">
+              <img src="assets/images/index/slideshow/1.jpg" alt="">
+            </div>
+            <div class="TeamCardBody">
+              <p class="TeamCardTitle">علی مومن زاده</p>
+              <p class="TeamCardContent">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم.
+              </p>
+            </div>
+            <div class="TeamCardFooter">
+              <ul>
+                <li>
+                  <a href="#">
+                    <span class="fab fa-telegram"></span></a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="fab fa-instagram"></span></a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="fab fa-linkedin"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="TeamCard">
+            <div class="TeamCardHeader">
+              <img src="assets/images/index/slideshow/1.jpg" alt="">
+            </div>
+            <div class="TeamCardBody">
+              <p class="TeamCardTitle">علی مومن زاده</p>
+              <p class="TeamCardContent">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم.
+              </p>
+            </div>
+            <div class="TeamCardFooter">
+              <ul>
+                <li>
+                  <a href="#">
+                    <span class="fab fa-telegram"></span></a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="fab fa-instagram"></span></a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="fab fa-linkedin"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="TeamCard">
+            <div class="TeamCardHeader">
+              <img src="assets/images/index/slideshow/1.jpg" alt="">
+            </div>
+            <div class="TeamCardBody">
+              <p class="TeamCardTitle">علی مومن زاده</p>
+              <p class="TeamCardContent">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه مجله در ستون و سطر آنچنان که لازم.
+              </p>
+            </div>
+            <div class="TeamCardFooter">
+              <ul>
+                <li>
+                  <a href="#">
+                    <span class="fab fa-telegram"></span></a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="fab fa-instagram"></span></a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="fab fa-linkedin"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------------------Team End-------------------------->
+
+    <!--------------------------Projects View Start-------------------------->
+
+    <section id="projectsView">
+      <div class="container-fluid">
+        <div class="row no-gutters text-center">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="assets/images/index/slideshow/1.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="assets/images/index/slideshow/1.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="assets/images/index/slideshow/1.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="assets/images/index/slideshow/1.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="assets/images/index/slideshow/1.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="assets/images/index/slideshow/1.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="assets/images/index/slideshow/1.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <img src="assets/images/index/slideshow/1.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------Projects View End-------------------------->
+
+    <!-----------------------Footer And Copyright Start-------------------->
+
+    <section id="bottom">
+      <div class="container-fluid">
+        <div class="row" id="viewpointForm">
+          <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+            <form action="" method="POST">
+              <input type="text" placeholder="نام" id="fullname">
+              <input type="text" placeholder="ایمیل" id="email">
+              <textarea name="" id="description" cols="30" rows="5" placeholder="نظر شما"></textarea>
+              <button class="btn btn-outline-primary btn-block rounded-0 text-white" type="submit" id="btnSendViewPoint">ارسال</button>
+            </form>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+            <p class="h1 mt-5">نظر سنجی تیم توسعه دهندگان وب</p>
+            <p class="mt-3 h5">
+              شما می توانید از طریق این نظرسنجی به ما در جهت ارتقاء کیفیت پروژه هایمان یاری رسانید.
+            </p>
+          </div>
+        </div>
+        <div class="row py-5">
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+            <div class="text-center">
+              <p class="h5">گروه ما</p>
+              <p>
+                گروه برنامه نویسی WebDevs با تجربه درخشان در طراحی و ساخت انواع وب سایت های مختلف و همکاری فعال با تیم برنامه نویسان اندروید و گروه بازی سازی ، آماده خدمت رسانی به شما می باشد. شما می توانید از طریق پل های ارتباطی زیر با ما در ارتباط باشید.
+              </p>
+            </div>
+
+            <div class="fa-2x text-center" id="bottomSocialMediaLink">
+              <a href="#">
+                <i class="fab fa-telegram-plane"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+            <h5 id="bottomLinksList1Title">اندروید</h5>
+            <ul class="list-inline mt-3" id="bottomLinksList1">
+              <li>
+                <a href="#" class="text-muted">نرم افزار</a>
+              </li>
+              <li>
+                <a href="#" class="text-muted">اخبار</a>
+              </li>
+              <li>
+                <a href="#" class="text-muted">ثبت پروژه</a>
+              </li>
+              <li>
+                <a href="#" class="text-muted">پشتبانی محصولات</a>
+              </li>
+              <li>
+                <a href="#" class="text-muted">ارتباط با توسعه دهندگان</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12 mt-5">
+            <h5 id="bottomLinksList2Title">طراحی بازی</h5>
+            <ul class="list-inline mt-3" id="bottomLinksList2">
+              <li>
+                <a href="#" class="text-muted">دانلود بازی</a>
+              </li>
+              <li>
+                <a href="#" class="text-muted">خدمات</a>
+              </li>
+              <li>
+                <a href="#" class="text-muted">گام بعدی</a>
+              </li>
+              <li>
+                <a href="#" class="text-muted">آموزش</a>
+              </li>
+              <li>
+                <a href="#" class="text-muted">ارتباط با تیم توسعه</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 col-12 mt-5">
+            <div class="mt-5">
+              <ul class="list-inline" id="contactInfo">
+                <li>
+                  <span class="fa fa-home mr-2 contactInfoIcon"></span><span>آدرس :</span><span id="adress ">اصفهان</span>
+                </li>
+                <li>
+                  <span class="fa fa-phone mr-2 contactInfoIcon"></span><span>شماره تماس :</span><span id="phoneNumber ">09135101092</span>
+                </li>
+                <li>
+                  <span class="fa fa-envelope mr-2 contactInfoIcon"></span><span>ایمیل :</span><span id="emailAdress ">alimomenzadeh78@gmail.com</span>
+                </li>
+                <li>
+                  <span class="fa fa-user-friends mr-2 contactInfoIcon"></span><span>پشتیابی :</span><span id="supportPhoneNumber ">09212903948</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="copyright">
+          <div class="col">
+            <p class="text-center">
+              <span>AMZEnterprise &copy;
+                <span id="dateTime"></span></span>
+              <script>
+                document
+                  .getElementById("dateTime")
+                  .innerHTML = new Date().getFullYear();
+              </script>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-----------------------Footer And Copyright End-------------------->
+
+    <!-----------------------Go To Top-------------------->
+    <a href="#Up" id="GoToTopArrow" class="smoothscroll">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!--------------------------Add JavaScripts------------------------------>
+
+    <script src="assets/js/lib/slick.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/index.js"></script>
+
+  </body>
+
+</html>

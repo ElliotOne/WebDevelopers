@@ -1,0 +1,40 @@
+@import "default.css";
+body{
+    background-color: var(--light);
+}
+/*======================================================
+                    Main Start
+======================================================*/
+/*================== Main Right Col ====================*/
+#MainRightCol .row>div {
+    margin-top: 20px;
+}
+
+.BlogCard {
+    background-color: var(--light);
+}
+
+ul.nav {
+    padding: 0 !important;
+    margin: 5px 25% !important;
+}
+#pagination .nav-item{
+    background-color: var(--dark);
+    display: inline-block;
+}
+#pagination .navlink{
+    color: white;
+    background-color: var(--dark);
+    display: block;
+    margin: 0;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+#pagination .navlink:hover{
+    color: white;
+    background-color: var(--red);
+    text-decoration: none;
+}
+/*======================================================
+                    Main End
+======================================================*/

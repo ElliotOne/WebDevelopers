@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>پنل مدیریت - اضافه یا ویرایش پست</title>
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/lib/all.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <link rel="stylesheet" href="assets/js/lib/tinymce/prism.css">
+    <link rel="stylesheet" href="assets/js/lib/tinymce/skins/ui/oxide-dark/skin.min.css">
+
+</head>
+
+<body class="bg-dark">
+
+
+
+    <section>
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+            <a href="index.html" class="navbar-brand text-danger mr-4 ml-4">پنل مدیریت</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavbarTop">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            <div class="collapse navbar-collapse" id="NavbarTop">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a href="projects.html" class="nav-link"><span class="fa fa-code"></span> پروژه ها</a></li>
+                    <li class="nav-item"><a href="posts.html" class="nav-link"><span class="fa fa-book"></span> پست ها</a></li>
+                    <li class="nav-item"><a href="posts_edit.html" class="nav-link"><span class="fa fa-pencil-alt"></span> ویرایش/افزودن پست</a></li>
+                    <li class="nav-item"><a href="settings.html" class="nav-link"><span class="fa fa-cogs"></span> تنظیمات</a></li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link dropdown-toggle mr-2" id="userSetting" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle"></i><span id="username">  علی مومن زاده </span> </a>
+                        <div class="dropdown-menu">
+                            <a href="profile.html" class="dropdown-item"><i class="fa fa-edit mr-3"></i>پروفایل</a>
+                            <a href="settings.html" class="dropdown-item"><i class="fa fa-cog mr-3"></i>تنظیمات</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="login.html" class="nav-link mr-5"><span class="fa fa-sign-out-alt"></span> خروج </a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+
+    <!----------------------------Top Label  Start---------------------------->
+    <section id="topLabel">
+        <div class="container-fluid">
+            <div class="row text-white">
+                <div class="col text-center py-5">
+                    <h2><span class="fa fa-table"></span> پست ها - اضافه کردن پست جدید </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------Top Label End---------------------------->
+
+
+
+
+
+
+    <!----------------------------Tabel and slide menu Start---------------------------->
+    <section>
+        <div class="container-fluid">
+            <div class="row my-5">
+                <div class="col-lg-9 col-md-9 col-sm-8 col-col-12">
+
+
+                    <!-- =================================== php ===================================
+
+                    Get data from database
+
+                    Important note : the last colum ("متن کامل") contains some buttons ,
+                    these buttons must have the id of the post then when we click them they will open the post
+                    (with the id that comes from the data base , I mean that each post have a uniq key or id in data base)
+                    in new .html file (for ex: post_data.html)
+
+                    =================================== php =================================== -->
+                    <form action="#" id="fullEditor">
+
+                        <div class="input-group">
+                            <span class="input-group-text">عنوان</span>
+                            <input type="text" class="form-control" id="title">
+                        </div>
+                        <div class="input-group mt-2">
+                            <input type="file" class="imgUpload" id="imgUpload" style="display: none">
+
+                            <span class="input-group-text">بارگذاری تصویر اصلی پست</span>
+                            <input type="text" class="form-control" placeholder="آدرس فایل ...">
+                            <button class="btn btn-danger input-group-text bg-dark text-white" id="btnImgUpload">
+                                <span class="fa fa-file mr-1"></span><span>بارگذاری</span>
+                            </button>
+                        </div>
+
+                        <div class="mt-3">
+                            <textarea id="textEditor"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-3 col-sm-4 col-col-12">
+
+                    <a href="#" id="btnAdd" class="btn btn-outline-success p-5 btn-block rounded-0" data-toggle="modal" data-target="#modalAddProject" data-whatever="@mdo">
+                        <span class="h4 fa fa-plus-square"></span>
+                        <span class="h4">اضافه</span>
+                    </a>
+
+                    <a href="#" id="btnEdit" class="btn btn-outline-primary p-5 btn-block rounded-0">
+                        <span class="h4 fa fa-pencil-alt"></span>
+                        <span class="h4">ویرایش</span>
+                    </a>
+                    <a href="#" id="btnDelete" class="btn btn-outline-danger p-5 btn-block rounded-0" data-toggle="modal" data-target="#modalDeleteProject" data-whatever="@mdooo">
+                        <span class="h4">حذف</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!----------------------------Tabel and slide menu End---------------------------->
+
+
+
+    <section class="pt-5 fixed-bottom">
+        <div class="container-fluid">
+            <div class="row pt-2 bg-primary text-white text-center">
+                <div class="col-12">
+
+                    <p>AMZEnterprise Copyright &copy; <span id="dateTime"></span></p>
+                    <script>
+                        document.getElementById("dateTime").innerHTML = new Date().getFullYear();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+
+    <script src="assets/js/lib/tinymce/jquery.tinymce.min.js"></script>
+    <script src="assets/js/lib/tinymce/tinymce.min.js"></script>
+    <script src="assets/js/lib/tinymce/prism.js"></script>
+
+    <script src="assets/js/posts_edit.js"></script>
+
+
+</body>
+
+</html>

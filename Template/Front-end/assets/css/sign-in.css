@@ -1,0 +1,23 @@
+@import "default.css";
+.InputGroupIcon{
+    text-align: center;
+    background-color: var(--red) !important;
+    color: white !important;
+}
+.InputGroupIcon span{
+    margin-top: 15px;
+}
+
+.BtnRed{
+    margin-top: 10px;
+    border-radius: 25px;
+    width: 200px;
+    font-weight: 600;
+}
+
+.LinkPurple{
+    margin-right: 10px;
+}   
+/* #frmSignInForgetPassword{
+    display: none;
+} */

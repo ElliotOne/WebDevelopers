@@ -1,0 +1,467 @@
+@import "default.css";
+
+/*======================================================
+                    Slider Start
+======================================================*/
+#Slider {
+    width: 100%;
+    clear: both !important;
+    position: relative !important;
+}
+
+#topSlider {
+    display: block !important;
+    height: 700px !important;
+}
+
+
+#topSlider {
+    height: 700px;
+}
+
+#topSlider img {
+    height: 700px;
+    width: 100%;
+}
+
+
+#sliderOverlay {
+    width: 100% !important;
+    background-color: rgba(0, 0, 0, 0.418);
+    padding: 20px;
+    z-index: 100;
+    position: absolute;
+    top: 200px;
+    left: 0;
+}
+
+.animatedText,
+.typed-cursor {
+    display: inline;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.animatedTextColor1 {
+    color: white;
+}
+
+.animatedTextColor2 {
+    color: rgb(255, 0, 85);
+}
+
+.animatedTextColor3 {
+    color: rgb(0, 217, 255);
+}
+
+
+.typed-cursor {
+    opacity: 1;
+    animation: blink 0.7s infinite;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.slick-prev.slick-arrow .slick-next.slick-arrow {
+    display: none;
+}
+
+/*======================================================
+                    Slider End
+======================================================*/
+
+/*======================================================
+                    Intro Start
+======================================================*/
+#Intro {
+    background-color: var(--light);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    position: relative;
+    top: -100px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#IntroCardContainer1 {
+    background-color: var(--pink);
+}
+
+#IntroCardContainer2 {
+    background-color: var(--red);
+}
+
+#IntroCardContainer3 {
+    background-color: var(--dark);
+}
+
+.IntroCard {
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.IntroCard span {
+    position: relative;
+    top: -70px;
+    font-size: 60px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 30px 0px;
+    width: 150px;
+    height: 140px;
+    color: var(--red);
+    transition: all 0.4s ease-in;
+}
+
+.IntroCard p {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.IntroCard:hover span {
+    color: var(--purple);
+}
+
+/*======================================================
+                    Intro End
+======================================================*/
+
+
+/*======================================================
+                    OverView Start
+======================================================*/
+.parallax1 {
+    /* The image used */
+    background-image: url(../images/index/slideshow/1.jpg);
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url(../images/index/slideshow/3.jpg);
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallaxContent {
+    background-color: var(--purple);
+    color: white;
+}
+
+#OverViewList ul {
+    font-size: 20px;
+    list-style: none;
+}
+
+#OverViewList ul li {
+    margin-top: 10px;
+}
+
+#OverViewList span:nth-child(1) {
+    color: var(--red);
+    background-color: var(--light);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#overviewSlider,
+#overviewSlider img {
+    height: 500px;
+}
+
+/*======================================================
+                    OverView End
+======================================================*/
+/*======================================================
+                    Comments Start
+======================================================*/
+#Comments {
+    background-color: var(--light);
+}
+
+#Comments>p {
+    color: var(--pink);
+}
+
+.CommentsCard {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    padding: 10px;
+}
+
+.CommentsCardHeader {
+    float: left;
+    display: inline-block;
+    width: 30%;
+}
+
+.CommentsCardBody {
+    float: right;
+    display: inline-block;
+    width: 70%;
+}
+
+.CommentsCardTitle {
+    font-size: 20px;
+}
+
+.CommentsCardHeader img {
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#Comments .slick-slide {
+    margin: 0 10px;
+}
+
+/*======================================================
+                    Comments End
+======================================================*/
+/*======================================================
+                    Services Start
+======================================================*/
+#Services {
+    background-color: var(--pink);
+    padding-bottom: 50px;
+}
+
+.ServicesCard {
+    height: 150px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    color: white;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+.ServicesCard:hover {
+    cursor: pointer;
+}
+
+.ServicesCard:hover span {
+    transform: rotate(360deg);
+}
+
+.ServicesCard span {
+    font-size: 30px;
+    transition: all 0.7s ease-in-out;
+}
+
+.ServicesCard h3 {
+    font-size: 22px;
+}
+
+.ServicesCard p {
+    margin-top: 15px;
+}
+
+/*======================================================
+                    Services End
+======================================================*/
+/*======================================================
+                    Blog Start
+======================================================*/
+#Blog .row {
+    padding: 100px;
+}
+/*======================================================
+                    Blog End
+======================================================*/
+/*======================================================
+                    Counter Start
+======================================================*/
+#Counter {
+    background-color: var(--purple);
+}
+
+#Counter .row {
+    padding: 0 100px;
+}
+
+.CounterCard {
+    text-align: center;
+}
+
+.CounterCardHeader span {
+    font-size: 90px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50%;
+    color: var(--purple);
+}
+
+.CounterCardTitle {
+    font-size: 20px;
+}
+
+.CounterCardHeader {
+    text-align: center;
+}
+
+.CounterCardBody {
+    text-align: center;
+}
+
+.CounterCardContent {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+/*======================================================
+                    Counter End
+======================================================*/
+/*======================================================
+                    Team Start
+======================================================*/
+#Team {
+    background-color: var(--light);
+}
+
+#Team>p {
+    color: var(--pink);
+}
+
+#teamSlider {
+    height: 400px;
+    display: block !important;
+}
+
+.TeamCard {
+    padding: 20px;
+    height: 400px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.TeamCardBody {
+    text-align: center;
+}
+
+.TeamCardTitle {
+    font-size: 20px;
+}
+
+.TeamCardHeader img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.TeamCardFooter ul {
+    list-style: none;
+    text-align: center;
+}
+
+.TeamCardFooter ul li {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.TeamCardFooter ul li a {
+    color: var(--dark);
+    transition: all 0.2s ease-in-out;
+}
+
+.TeamCardFooter ul li a:hover {
+    color: var(--red);
+}
+
+.slick-dots li button:before {
+    font-size: 40px !important;
+}
+
+/*======================================================
+                    Team End
+======================================================*/
+
+/*======================================================
+                    Projects View Start
+======================================================*/
+#projectsView {
+    padding: 100px 0;
+}
+
+#projectsView row {
+    width: 100%;
+}
+
+#projectsView .col-lg-3 {
+    height: 200px;
+    overflow: hidden;
+}
+
+#projectsView img {
+    height: 200px;
+    transition: all 0.4s ease-in-out;
+    cursor: zoom-in;
+}
+
+#projectsView img:hover {
+    transform: scale(1.3, 1.3);
+}
+
+/*======================================================
+                    Projects View End
+======================================================*/

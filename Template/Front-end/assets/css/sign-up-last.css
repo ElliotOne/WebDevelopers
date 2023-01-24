@@ -1,0 +1,22 @@
+@import "default.css";
+#AgreementCard{
+    background-color: var(--light);
+    border-radius: 5px;
+    padding: 20px;
+}
+#AgreementHeader{
+    text-align: center;
+    color: var(--purple);
+}
+#AgreementBody{
+    border-top: 1px solid var(--gray);
+}
+#AgreementFooter{
+    border-top: 1px solid var(--gray);
+}
+.BtnRed{
+    margin-top: 10px;
+    border-radius: 25px;
+    width: 100%;
+    font-weight: 600;
+}

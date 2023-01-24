@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>پنل کاربری - پیگیری تیکت</title>
+    <!-------------------------------Favicon-------------------------------------->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+
+    <!-------------------------------FontAwsome-------------------------------------->
+    <link rel="stylesheet" href="assets/css/lib/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <script src="assets/js/lib/jquery-3.3.1.min.js"></script>
+
+    <!-------------------------------Bootstarp-------------------------------------->
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">لوگوی سایت</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">داشبورد</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project_new.html">پروژه جدید</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project_all.html">لیست پروژه ها</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span id="lblUserName">نام کاربر لاگین شده در این قسمت</span>
+                        <span class="fa fa-user-alt"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="support_new.html">ارسال تیکت</a>
+                        <a class="dropdown-item" href="support_all.html">پیگیری سفارشات</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="profile.html">ویرایش پروفایل</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" id="frmSearch">
+                <input class="form-control mr-sm-2" type="search" placeholder="عبارتی برای جست و جو وارد کنید ..." aria-label="Search" id="inpsearch">
+                <button type="submit" class="btnRed my-2 my-sm-0" type="submit">
+                    <span><span class="fa fa-search"></span></span>
+                </button>
+            </form>
+        </div>
+    </nav>
+    <section id="main">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="panelCard">
+                        <div class="panelCardHeader">
+                            <p class="h5">
+                                <span>پیگیری تیکت</span>
+                                <span id="lblTicketNumber" class="ml-2">شماره تیکت</span>
+                            </p>
+                        </div>
+                        <div class="panelCardContent">
+                            <div class="panelCardMain">
+                                <form action="" id="frmRegisterProject">
+                                    <div class="Comments">
+                                        <ul>
+                                            <li class="LiHasCommentChild">
+                                                <div class="CommentCard UserComment">
+                                                    <div class="CommentCardRight">
+                                                        <img src="assets/images/breadcrumb_background.jpg" alt="" class="CommentCardUserAlt">
+                                                    </div>
+                                                    <div class="CommentCardLeft">
+                                                        <ul>
+                                                            <li>
+                                                                <span>شما</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>&comma;</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>96/2/4</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>&comma;</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>16:45</span>
+                                                            </li>
+                                                        </ul>
+                                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+                                                            و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <ul class="CommentChild">
+                                                    <li>
+                                                        <div class="CommentCard AdminComment">
+                                                            <div class="CommentCardRight">
+                                                                <img src="assets/images/breadcrumb_background.jpg" alt="" class="CommentCardUserAlt">
+                                                            </div>
+                                                            <div class="CommentCardLeft">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>نام ادمین پاسخگو و توضیحات
+                                                                            مختصر</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>&comma;</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>96/2/4</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>&comma;</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>16:45</span>
+                                                                    </li>
+                                                                </ul>
+                                                                <p>
+                                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                                                </p>
+                                                                <button class="btnAnswer">
+                                                                    <span>پاسخ دادن</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="CommentCard AdminComment">
+                                                            <div class="CommentCardRight">
+                                                                <img src="assets/images/breadcrumb_background.jpg" alt="" class="CommentCardUserAlt">
+                                                            </div>
+                                                            <div class="CommentCardLeft">
+                                                                <ul>
+                                                                    <li>
+                                                                        <span>نام ادمین پاسخگو و توضیحات
+                                                                            مختصر</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>&comma;</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>96/2/4</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>&comma;</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>16:45</span>
+                                                                    </li>
+                                                                </ul>
+                                                                <p>
+                                                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                                                                    کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو
+                                                                    در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی
+                                                                    سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                                                </p>
+                                                                <button class="btnAnswer">
+                                                                    <span>پاسخ دادن</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <div class="CommentCard UserComment">
+                                                    <div class="CommentCardRight">
+                                                        <img src="assets/images/breadcrumb_background.jpg" alt="" class="CommentCardUserAlt">
+                                                    </div>
+                                                    <div class="CommentCardLeft">
+                                                        <ul>
+                                                            <li>
+                                                                <span>شما</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>&comma;</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>96/2/4</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>&comma;</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>16:45</span>
+                                                            </li>
+                                                        </ul>
+                                                        <p>
+                                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <a href="support_new.html" class="btnPurple py-2 text-white">ارسال تیکت مجدد</a>
+                                        <input type="submit" class="btnRed" value="بستن تیکت">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="panelCardFooter">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <script src="assets/js/support_single.js"></script> -->
+</body>
+
+</html>

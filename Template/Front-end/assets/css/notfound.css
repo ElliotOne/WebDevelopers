@@ -1,0 +1,9 @@
+@import "default.css";
+
+#errorMessage{
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: var(--purple);
+    text-align: center;
+}

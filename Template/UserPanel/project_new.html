@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>پنل کاربری - سفارش پروژه</title>
+    <!-------------------------------Favicon-------------------------------------->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+
+    <!-------------------------------FontAwsome-------------------------------------->
+    <link rel="stylesheet" href="assets/css/lib/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <script src="assets/js/lib/jquery-3.3.1.min.js"></script>
+    <!-------------------------------Bootstarp-------------------------------------->
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">لوگوی سایت</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">داشبورد</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project_new.html">پروژه جدید</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project_all.html">لیست پروژه ها</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span id="lblUserName">نام کاربر لاگین شده در این قسمت</span>
+                        <span class="fa fa-user-alt"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="support_new.html">ارسال تیکت</a>
+                        <a class="dropdown-item" href="support_all.html">پیگیری سفارشات</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="profile.html">ویرایش پروفایل</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" id="frmSearch">
+                <input class="form-control mr-sm-2" type="search" placeholder="عبارتی برای جست و جو وارد کنید ..." aria-label="Search" id="inpsearch">
+                <button type="submit" class="btnRed my-2 my-sm-0" type="submit">
+                    <span><span class="fa fa-search"></span></span>
+                </button>
+            </form>
+        </div>
+    </nav>
+    <section id="main">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="panelCard">
+                        <div class="panelCardHeader">
+                            <p class="h5">ثبت سفارش پروژه</p>
+                        </div>
+                        <div class="panelCardContent">
+                            <div class="panelCardMain">
+                                <form action="" id="frmRegisterProject">
+                                    <div class="form-group">
+                                        <label for="txtdescription">توضیحات پروژه</label>
+                                        <textarea name="" id="txtdescription" class="form-control py-2 rounded-0" cols="30" rows="7" placeholder="توضیحات کامل پروژه را در این قسمت وارد کنید"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="file" id="hiddenFileUploader" multiple>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <button id="btnFileUploader" class="btnRed" type="button">ارسال فایل
+                                            (ها)
+                                            توضیحات</button>
+                                        <input type="submit" class="btnPurple" value="ثبت نهایی پروژه">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="panelCardFooter">
+                                <div id="submitAlert">
+                                    <button id="btnCloseSubmitAlert"><span class="fa fa-times"></span></button>
+                                    <p>
+                                        پروژه جدید شما با موفقیت ثبت گردید . به زودی تیم توسعه ما به شما تماس خواهند گرفت . با تشکر
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/project_new.js"></script>
+</body>
+
+</html>

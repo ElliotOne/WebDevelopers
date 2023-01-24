@@ -1,0 +1,140 @@
+@import "default.css";
+
+/*======================================================
+                    Site OverView Start
+======================================================*/
+#SiteOverView{
+    
+}
+#SiteOverView>p{
+    color: var(--pink);
+}
+/*======================================================
+                    Site OverView End
+======================================================*/
+/*======================================================
+                    Team Start
+======================================================*/
+
+.parallax1 {
+    /* The image used */
+    background-image: url(../images/index/slideshow/1.jpg);
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url(../images/index/slideshow/3.jpg);
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallaxContent {
+    height: 600px;
+    background-color: var(--purple);
+    color: white;
+}
+
+
+
+
+#teamSlider {
+    height: 400px;
+    display: block !important;
+}
+
+.TeamCard {
+    padding: 20px;
+    height: 400px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.TeamCardBody {
+    text-align: center;
+}
+
+.TeamCardTitle {
+    font-size: 20px;
+}
+
+.TeamCardHeader img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.TeamCardFooter ul {
+    list-style: none;
+    text-align: center;
+}
+
+.TeamCardFooter ul li {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.TeamCardFooter ul li a {
+    color: var(--dark);
+    transition: all 0.2s ease-in-out;
+}
+
+.TeamCardFooter ul li a:hover {
+    color: var(--red);
+}
+
+.slick-dots li button:before {
+    font-size: 40px !important;
+}
+
+/*======================================================
+                    Team End
+======================================================*/
+/*======================================================
+                    Projects Start
+======================================================*/
+#Projects {
+    color: var(--pink);
+    padding: 100px 0;
+}
+
+#Projects row {
+    width: 100%;
+}
+
+#Projects .col-lg-3 {
+    height: 200px;
+    overflow: hidden;
+}
+
+#Projects img {
+    height: 200px;
+    transition: all 0.4s ease-in-out;
+    cursor: zoom-in;
+}
+
+#Projects img:hover {
+    transform: scale(1.3, 1.3);
+}
+
+/*======================================================
+                    Projects End
+======================================================*/
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>پنل مدیریت - ورود</title>
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/lib/all.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+</head>
+
+<body class="bg-dark">
+
+
+    <!----------------------------Login Panel Start---------------------------->
+    <section id="loginPanel">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-6 col-sm-7 col-10">
+                    <div class="card bg-dark text-white">
+                        <div class="card-header py-3">
+                            <h4>ورود</h4>
+                        </div>
+                        <div class="card-body pt-5">
+                            <form action="" method="POST">
+                                <div class="form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-user text-danger"></i></span>
+                                        <input type="text" class="form-control" placeholder="نام کاربری" id="username">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-key text-danger"></i></span>
+                                        <input type="password" class="form-control" placeholder="رمز عبور" id="password">
+                                    </div>
+                                </div>
+                                <button class="btn btn-danger rounded-0 mt-5 btn-block" type="submit" id="btnLogin">ورود</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------Login Panel End---------------------------->
+
+
+
+    <section class="pt-5 fixed-bottom">
+        <div class="container-fluid">
+            <div class="row pt-2 bg-primary text-white text-center">
+                <div class="col-12">
+
+                    <p>AMZEnterprise Copyright &copy; <span id="dateTime"></span></p>
+                    <script>
+                        document.getElementById("dateTime").innerHTML = new Date().getFullYear();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <script src="assets/js/login.js"></script>
+</body>
+
+</html>

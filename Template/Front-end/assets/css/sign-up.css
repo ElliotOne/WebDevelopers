@@ -1,0 +1,7 @@
+@import "default.css";
+.BtnRed{
+    margin-top: 10px;
+    border-radius: 25px;
+    width: 100%;
+    font-weight: 600;
+}
